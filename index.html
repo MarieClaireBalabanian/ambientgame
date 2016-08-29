@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AMBIEN*t</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>AMBIEN*t</h1>
+  </header>
+
+  
+
+
+  <div class="wrapper">
+    <canvas id="game_window" height="600px" width="800px"></canvas>
+    <div class="intro_bg"></div>   
+    <div class="startmodal">
+      <h3>...Welcome Sleepyhead...</h3>
+      <p>Keep the ball bouncing by moving the paddle with the left and right arrow keys. Press the spacebar to launch the ball. Ready to play?</p>
+      <button id="playbtn" type="button">Okay</button>
+    </div>
+    <div class="endmodal">
+      <h3>...Nice try...</h3>
+      <p>Would you like to play again?</p>
+      <button id="restartbtn" type="button">Okay</button>
+    </div>
+  </div>
+
+
+
+  <audio id="theme" src="./media/theme.mp3"></audio>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

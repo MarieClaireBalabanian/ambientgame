@@ -1,0 +1,102 @@
+// Main Stylesheet
+
+
+@import (inline) '../bower_components/normalize-css/normalize.css'; // Browser reset
+@import 'modules/colors';
+@import 'modules/type'; 
+@import 'modules/grid';
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  background-image: url("../media/rainlight.jpeg");
+  background-position:center center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Bungee Hairline', cursive;
+  font-size: 20px;
+  color: white;
+  text-align: right;
+  margin-right: 100px;
+  margin-top: 20px;
+  letter-spacing: 5px;
+}
+
+.wrapper {
+  position: relative;
+  margin: auto;
+  width: 800px;
+  height:600px;
+  overflow:hidden;
+}
+
+#game_window {
+  background-color: rgba(232, 226, 226, 0);
+  z-index: 1;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto; 
+  position: absolute;  
+}
+.intro_bg {
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+  background: url("../media/rainlight.jpeg");
+  background-position:center center;
+  background-size:cover;
+  transform:scale(1);
+  transition:all 60s ease-in;
+  z-index: 0;
+  position: absolute;  
+}
+
+.intro_bg.zout {
+  transform:scale(5);
+}
+
+.startmodal {
+  width: 400px;
+  height: 220px;
+  margin: 150px 200px 0px 200px;
+  background: rgba(255, 255, 255, .9);
+  z-index: 2;
+  position: absolute;
+  font-family: 'Bungee Hairline', cursive;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.playbtn {
+  outline: none;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.endmodal {
+  width: 400px;
+  height: 160px;
+  margin: 150px 200px 0px 200px;
+  background: rgba(255, 255, 255, .9);
+  z-index: 3;
+  position: absolute;
+  font-family: 'Bungee Hairline', cursive;
+  text-align: center;
+  border-radius: 2px;
+  visibility: hidden;
+}
+
+.restartbtn {
+  outline: none;
+}
